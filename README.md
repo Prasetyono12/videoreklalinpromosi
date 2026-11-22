@@ -6,7 +6,7 @@ Proyek video promosi berbasis React + TypeScript + Remotion untuk aplikasi web *
 
 - Format utama media sosial (TikTok, Instagram Reels/Stories, YouTube Shorts): **1080 × 1920 (9:16)**, komposisi `RekLaLinPromoVertical`
 - Format landscape: 1920 × 1080 (16:9), komposisi `RekLaLinPromo`
-- 30 fps, 1.650 frame (55 detik), MP4; isi dan narasi sama di kedua format
+- 30 fps, 1.715 frame (±57,17 detik), MP4; isi dan narasi sama di kedua format
 - Delapan adegan, lima karakter animasi (Warga, Admin, Kepala Dinas, Kepala Bidang, Teknisi)
 - Dua alur layanan ditampilkan terpisah: Surat Rekomendasi Penggunaan Jalan (Jalur A) dan Pergeseran/Pemindahan Fasilitas Jalan (Jalur B)
 
@@ -47,10 +47,10 @@ npm run still               # cover vertikal -> out/reklalin-promo-vertikal-cove
 npm run still:landscape     # cover landscape
 ```
 
-Cover dari frame lain (maksimum 1649):
+Cover dari frame lain (maksimum 1714):
 
 ```powershell
-npx remotion still src/index.tsx RekLaLinPromoVertical out/cover-frame-1650.png --frame=1600
+npx remotion still src/index.tsx RekLaLinPromoVertical out/cover-frame-1600.png --frame=1600
 ```
 
 Area aman vertikal: elemen penting berada di antara y 230 dan y 1410 (`SAFE` di `src/config.ts`), subtitle mulai y 1440, agar tidak tertutup antarmuka TikTok/Reels.

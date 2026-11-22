@@ -22,7 +22,7 @@ export const FORMATS = {
  * SAFE_TOP dan SAFE_BOTTOM supaya tidak tertutup antarmuka TikTok/Reels (nama akun, tombol, keterangan).
  */
 export const SAFE = {top: 230, bottom: 1410, subtitleTop: 1440, side: 60};
-export const TOTAL_FRAMES = 1650; // 55 detik x 30 fps
+export const TOTAL_FRAMES = 1715; // 57,17 detik x 30 fps; memberi ruang bagi VO yang diperlambat
 
 /** Jumlah frame adegan lama tetap tampil di bawah adegan baru saat transisi masuk. */
 export const OVERLAP = 24;
@@ -38,14 +38,14 @@ export type SceneId =
   | 'survey';
 
 export const SCENES: ReadonlyArray<{id: SceneId; from: number; duration: number; label: string}> = [
-  {id: 'intro', from: 0, duration: 150, label: '00:00-00:05 Opening & pengenalan'},
-  {id: 'services', from: 150, duration: 210, label: '00:05-00:12 Dua jenis layanan'},
-  {id: 'apply', from: 360, duration: 240, label: '00:12-00:20 Pengajuan oleh Warga'},
-  {id: 'workflow', from: 600, duration: 210, label: '00:20-00:27 Alur pelayanan & peran'},
-  {id: 'technical', from: 810, duration: 210, label: '00:27-00:34 Pemeriksaan & pelaksanaan teknis'},
-  {id: 'review', from: 1020, duration: 180, label: '00:34-00:40 Pemeriksaan berjenjang & revisi'},
-  {id: 'delivery', from: 1200, duration: 210, label: '00:40-00:47 Dokumen hasil, QR Code'},
-  {id: 'survey', from: 1410, duration: 240, label: '00:47-00:55 Survei kepuasan & closing'},
+  {id: 'intro', from: 0, duration: 156, label: '00:00-00:05.2 Opening & pengenalan'},
+  {id: 'services', from: 156, duration: 218, label: '00:05.2-00:12.5 Dua jenis layanan'},
+  {id: 'apply', from: 374, duration: 250, label: '00:12.5-00:20.8 Pengajuan oleh Warga'},
+  {id: 'workflow', from: 624, duration: 218, label: '00:20.8-00:28.1 Alur pelayanan & peran'},
+  {id: 'technical', from: 842, duration: 218, label: '00:28.1-00:35.3 Pemeriksaan & pelaksanaan teknis'},
+  {id: 'review', from: 1060, duration: 187, label: '00:35.3-00:41.6 Pemeriksaan berjenjang & revisi'},
+  {id: 'delivery', from: 1247, duration: 218, label: '00:41.6-00:48.8 Dokumen hasil, QR Code'},
+  {id: 'survey', from: 1465, duration: 250, label: '00:48.8-00:57.2 Survei kepuasan & closing'},
 ];
 
 export const sceneOf = (id: SceneId) => {
@@ -54,8 +54,8 @@ export const sceneOf = (id: SceneId) => {
   return s;
 };
 
-/** Titik awal bagian closing di dalam adegan terakhir (frame lokal). 47s + 5s = 52s. */
-export const CLOSING_START = 150;
+/** Titik awal bagian closing di dalam adegan terakhir (frame lokal). */
+export const CLOSING_START = 156;
 
 /**
  * Penanda fitur. Isi `true` hanya jika fitur tersebut sudah terbukti aktif di aplikasi.
@@ -73,24 +73,24 @@ export const FEATURES = {
 };
 
 /**
- * VO menggunakan file di public/ dan dipercepat tipis agar selesai bersama video 55 detik.
+ * VO menggunakan file di public/ dan diperlambat tipis agar ritmenya selaras dengan visual.
  * Musik dan SFX tetap opsional.
  */
 export const AUDIO = {
   music: {enabled: false, file: 'audio/musik-latar.mp3', volume: 0.22},
-  voiceOver: {enabled: true, file: 'VO_Reklalin.mp3', volume: 1, playbackRate: 1.02},
+  voiceOver: {enabled: true, file: 'VO_Reklalin.mp3', volume: 1, playbackRate: 0.98},
   sfx: {
     enabled: false,
     volume: 0.5,
     cues: [
-      {file: 'audio/sfx-whoosh.mp3', frame: 150},
-      {file: 'audio/sfx-klik.mp3', frame: 360 + 196},
-      {file: 'audio/sfx-notifikasi.mp3', frame: 360 + 206},
-      {file: 'audio/sfx-whoosh.mp3', frame: 600},
-      {file: 'audio/sfx-whoosh.mp3', frame: 810},
-      {file: 'audio/sfx-whoosh.mp3', frame: 1020},
-      {file: 'audio/sfx-digital.mp3', frame: 1200 + 100},
-      {file: 'audio/sfx-penutup.mp3', frame: 1410 + 160},
+      {file: 'audio/sfx-whoosh.mp3', frame: 156},
+      {file: 'audio/sfx-klik.mp3', frame: 374 + 204},
+      {file: 'audio/sfx-notifikasi.mp3', frame: 374 + 214},
+      {file: 'audio/sfx-whoosh.mp3', frame: 624},
+      {file: 'audio/sfx-whoosh.mp3', frame: 842},
+      {file: 'audio/sfx-whoosh.mp3', frame: 1060},
+      {file: 'audio/sfx-digital.mp3', frame: 1247 + 104},
+      {file: 'audio/sfx-penutup.mp3', frame: 1465 + 166},
     ],
   },
 };

@@ -35,3 +35,8 @@ Format: **file/folder** → apa yang diubah → hasil. Perbaikan terbaru di pali
 1. `npm install`, `npm run typecheck`, `npm run dev`, lalu periksa kedua komposisi.
 2. Pastikan tidak ada elemen penting tertutup antarmuka TikTok/Reels pada ponsel (area aman sudah dijaga, tetapi tampilan antarmuka tiap aplikasi berubah-ubah).
 3. Laporan masih memuat sisa "Kepala Seksi" dan nama "Peduli Warga"; sesuaikan laporan, video sudah mengikuti keputusan terbaru.
+
+## Putaran 4: tempo VO dan logo transparan
+- `src/config.ts` → VO diperlambat tipis ke playback rate 0,98; durasi komposisi diselaraskan menjadi 1.715 frame (±57,17 detik), dengan seluruh delapan adegan dan titik SFX diperpanjang proporsional, urutan tetap.
+- `src/components/Common.tsx` → ubin putih dan bayangan di belakang logo dilepas; transparansi gambar logo yang sudah ada kini terlihat di semua pemakaian tanpa mengubah animasi atau komposisi adegan.
+- `README.md`, `NASKAH-NARASI.md`, `STORYBOARD.md` → durasi, batas adegan, dan titik mulai penutup diperbarui agar sesuai dengan timeline baru.

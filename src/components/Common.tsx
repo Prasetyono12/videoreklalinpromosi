@@ -53,18 +53,15 @@ export const Eyebrow: React.FC<{children: React.ReactNode; dark?: boolean}> = ({
   </div>
 );
 
-/** Logo Dishub Kabupaten Banyumas (src/assets/logoDishub.ts) pada ubin putih agar terbaca di latar gelap maupun terang. */
+/** Logo Dishub Kabupaten Banyumas dengan latar transparan. */
 export const BrandMark: React.FC<{size?: number}> = ({size = 72}) => (
   <div
     style={{
       width: size,
       height: size,
-      borderRadius: size * 0.25,
-      background: C.white,
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      boxShadow: '0 12px 30px rgba(0,0,0,.22)',
       flexShrink: 0,
     }}
   >

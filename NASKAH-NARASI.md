@@ -1,21 +1,21 @@
 # Naskah Narasi Final Video Promosi Layanan Aduan RekLaLin
 
-Durasi video: 55 detik (1.650 frame, 30 fps). Gaya baca: formal tetapi tidak kaku, ramah, tempo sedang (±2,8 kata per detik).
+Durasi video: ±57,17 detik (1.715 frame, 30 fps). VO diperlambat tipis (playback rate 0,98) dan durasi tiap adegan diselaraskan secara proporsional tanpa mengubah isi atau urutannya. Gaya baca: formal tetapi tidak kaku, ramah, tempo sedang (±2,8 kata per detik).
 Teks yang sama dipakai sebagai subtitle di video (`src/narration.ts`).
 
 | Waktu | Durasi adegan | Jumlah kata | Perkiraan durasi bicara | Narasi |
 |---|---|---|---|---|
-| 00:00–00:05 | 5 dtk | 13 | ≈4.6 dtk | Kenalkan Layanan Aduan RekLaLin, layanan digital untuk permohonan dan aduan rekayasa lalu lintas. |
-| 00:05–00:12 | 7 dtk | 17 | ≈6.1 dtk | Tersedia dua layanan utama: rekomendasi penggunaan jalan selain untuk lalu lintas, serta pergeseran atau pemindahan fasilitas jalan. |
-| 00:12–00:20 | 8 dtk | 13 | ≈4.6 dtk | Warga mengisi data, memilih layanan, menentukan lokasi melalui peta, dan mengunggah dokumen pendukung. |
-| 00:20–00:27 | 7 dtk | 15 | ≈5.4 dtk | Permohonan diproses Admin dan pejabat terkait, melalui tahapan yang berbeda sesuai jenis layanan dan kewenangannya. |
-| 00:27–00:34 | 7 dtk | 13 | ≈4.6 dtk | Kepala Bidang menugaskan Teknisi, yang menyiapkan draft surat atau memeriksa langsung di lapangan. |
-| 00:34–00:40 | 6 dtk | 11 | ≈3.9 dtk | Hasil ditinjau secara berjenjang dan dapat diperbaiki sesuai catatan pejabat berwenang. |
-| 00:40–00:47 | 7 dtk | 14 | ≈5.0 dtk | Admin menyampaikan hasil kepada Warga. Dokumen yang tersedia dapat diperiksa melalui QR Code verifikasi. |
-| 00:47–00:52 | 5 dtk | 11 | ≈3.9 dtk | Warga dapat memantau perkembangan layanan dan memberi penilaian melalui survei kepuasan. |
-| 00:52–00:55 | 3 dtk | 10 | ≈3.6 dtk | Layanan Aduan RekLaLin. Lebih terarah, transparan, dan dekat dengan Warga. |
+| 00:00–00:05.2 | 5,2 dtk | 13 | ≈4.8 dtk | Kenalkan Layanan Aduan RekLaLin, layanan digital untuk permohonan dan aduan rekayasa lalu lintas. |
+| 00:05.2–00:12.5 | 7,3 dtk | 17 | ≈6.3 dtk | Tersedia dua layanan utama: rekomendasi penggunaan jalan selain untuk lalu lintas, serta pergeseran atau pemindahan fasilitas jalan. |
+| 00:12.5–00:20.8 | 8,3 dtk | 13 | ≈4.8 dtk | Warga mengisi data, memilih layanan, menentukan lokasi melalui peta, dan mengunggah dokumen pendukung. |
+| 00:20.8–00:28.1 | 7,3 dtk | 15 | ≈5.6 dtk | Permohonan diproses Admin dan pejabat terkait, melalui tahapan yang berbeda sesuai jenis layanan dan kewenangannya. |
+| 00:28.1–00:35.3 | 7,3 dtk | 13 | ≈4.8 dtk | Kepala Bidang menugaskan Teknisi, yang menyiapkan draft surat atau memeriksa langsung di lapangan. |
+| 00:35.3–00:41.6 | 6,2 dtk | 11 | ≈4.1 dtk | Hasil ditinjau secara berjenjang dan dapat diperbaiki sesuai catatan pejabat berwenang. |
+| 00:41.6–00:48.8 | 7,3 dtk | 14 | ≈5.2 dtk | Admin menyampaikan hasil kepada Warga. Dokumen yang tersedia dapat diperiksa melalui QR Code verifikasi. |
+| 00:48.8–00:54.0 | 5,2 dtk | 11 | ≈4.1 dtk | Warga dapat memantau perkembangan layanan dan memberi penilaian melalui survei kepuasan. |
+| 00:54.0–00:57.2 | 3,2 dtk | 10 | ≈3.7 dtk | Layanan Aduan RekLaLin. Lebih terarah, transparan, dan dekat dengan Warga. |
 
-Catatan: kalimat penutup (00:52–00:55) sedikit melebihi tempo rata-rata. Bacakan agak cepat, atau pendekkan menjadi "Layanan Aduan RekLaLin. Lebih terarah, lebih transparan." (ubah juga di `src/narration.ts`).
+Catatan: teks VO dan subtitle dipertahankan. Penutup kini dimulai sekitar 00:54 setelah tempo VO diperlambat tipis dan waktu adegan disesuaikan.
 
 ## Pembaruan terbaru
 

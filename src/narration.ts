@@ -13,15 +13,15 @@ export type NarrationLine = {
  * dengan durasi adegan (kecepatan bicara sekitar 2,5 - 3 kata per detik).
  */
 export const NARRATION: ReadonlyArray<NarrationLine> = [
-  {scene: 'intro', startLocal: 0, endLocal: 150, text: 'Kenalkan Layanan Aduan RekLaLin, layanan digital untuk permohonan dan aduan rekayasa lalu lintas.'},
-  {scene: 'services', startLocal: 0, endLocal: 210, text: 'Tersedia dua layanan utama: rekomendasi penggunaan jalan selain untuk lalu lintas, serta pergeseran atau pemindahan fasilitas jalan.'},
-  {scene: 'apply', startLocal: 0, endLocal: 240, text: 'Warga mengisi data, memilih layanan, menentukan lokasi melalui peta, dan mengunggah dokumen pendukung.'},
-  {scene: 'workflow', startLocal: 0, endLocal: 210, text: 'Permohonan diproses Admin dan pejabat terkait, melalui tahapan yang berbeda sesuai jenis layanan dan kewenangannya.'},
-  {scene: 'technical', startLocal: 0, endLocal: 210, text: 'Kepala Bidang menugaskan Teknisi, yang menyiapkan draft surat atau memeriksa langsung di lapangan.'},
-  {scene: 'review', startLocal: 0, endLocal: 180, text: 'Hasil ditinjau secara berjenjang dan dapat diperbaiki sesuai catatan pejabat berwenang.'},
-  {scene: 'delivery', startLocal: 0, endLocal: 210, text: 'Admin menyampaikan hasil kepada Warga. Dokumen yang tersedia dapat diperiksa melalui QR Code verifikasi.'},
+  {scene: 'intro', startLocal: 0, endLocal: 156, text: 'Kenalkan Layanan Aduan RekLaLin, layanan digital untuk permohonan dan aduan rekayasa lalu lintas.'},
+  {scene: 'services', startLocal: 0, endLocal: 218, text: 'Tersedia dua layanan utama: rekomendasi penggunaan jalan selain untuk lalu lintas, serta pergeseran atau pemindahan fasilitas jalan.'},
+  {scene: 'apply', startLocal: 0, endLocal: 250, text: 'Warga mengisi data, memilih layanan, menentukan lokasi melalui peta, dan mengunggah dokumen pendukung.'},
+  {scene: 'workflow', startLocal: 0, endLocal: 218, text: 'Permohonan diproses Admin dan pejabat terkait, melalui tahapan yang berbeda sesuai jenis layanan dan kewenangannya.'},
+  {scene: 'technical', startLocal: 0, endLocal: 218, text: 'Kepala Bidang menugaskan Teknisi, yang menyiapkan draft surat atau memeriksa langsung di lapangan.'},
+  {scene: 'review', startLocal: 0, endLocal: 187, text: 'Hasil ditinjau secara berjenjang dan dapat diperbaiki sesuai catatan pejabat berwenang.'},
+  {scene: 'delivery', startLocal: 0, endLocal: 218, text: 'Admin menyampaikan hasil kepada Warga. Dokumen yang tersedia dapat diperiksa melalui QR Code verifikasi.'},
   {scene: 'survey', startLocal: 0, endLocal: CLOSING_START, text: 'Warga dapat memantau perkembangan layanan dan memberi penilaian melalui survei kepuasan.'},
-  {scene: 'survey', startLocal: CLOSING_START, endLocal: 240, text: 'Layanan Aduan RekLaLin. Lebih terarah, transparan, dan dekat dengan Warga.'},
+  {scene: 'survey', startLocal: CLOSING_START, endLocal: 250, text: 'Layanan Aduan RekLaLin. Lebih terarah, transparan, dan dekat dengan Warga.'},
 ];
 
 export const narrationFor = (scene: SceneId) => NARRATION.filter((n) => n.scene === scene);
